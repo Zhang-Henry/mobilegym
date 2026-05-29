@@ -459,7 +459,7 @@ If MobileGym helps your research, please cite us:
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Purewhiter/mobilegym&type=Date)](https://star-history.com/#Purewhiter/mobilegym&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=purewhiter/mobilegym&type=Date)](https://star-history.com/#purewhiter/mobilegym&Date)
 
 <br/>
 
