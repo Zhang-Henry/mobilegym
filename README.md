@@ -456,16 +456,9 @@ If MobileGym helps your research, please cite us:
       url={https://arxiv.org/abs/2605.26114}
 }
 ```
-
 ## Star History
 
-<a href="https://www.star-history.com/?repos=purewhiter%2Fmobilegym&type=timeline&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=purewhiter/mobilegym&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=purewhiter/mobilegym&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=purewhiter/mobilegym&type=timeline&legend=top-left" />
- </picture>
-</a>
+[![Star History Chart](https://api.star-history.com/chart?repos=Purewhiter/mobilegym&type=date&legend=top-left)](https://www.star-history.com/?repos=Purewhiter%2Fmobilegym&type=date&legend=top-left)
 
 <br/>
 
