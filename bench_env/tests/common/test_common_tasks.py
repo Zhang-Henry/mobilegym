@@ -455,6 +455,43 @@ class TestUnexpectedChangeFiltering:
         )
         assert unexpected == []
 
+    def test_always_ignore_derived_widget_service_mirrors(self):
+        diffs = [
+            {
+                "path": "os.services.alarm_manager.alarms.com.android.deskclock:a7",
+                "init": None,
+                "curr": {"id": "a7", "hour": 22, "minute": 30},
+            },
+            {
+                "path": "os.services.media_session.active.title",
+                "init": "搁浅",
+                "curr": "青花瓷",
+            },
+            {
+                "path": "os.services.media_session.active.isPlaying",
+                "init": False,
+                "curr": True,
+            },
+            {
+                "path": "os.services.display.brightness",
+                "init": 50,
+                "curr": 10,
+            },
+        ]
+        from bench_env.task.base import BaseTask
+
+        unexpected = StateComparator.filter_unexpected_changes(
+            diffs,
+            list(BaseTask.always_ignore),
+        )
+        assert unexpected == [
+            {
+                "path": "os.services.display.brightness",
+                "init": 50,
+                "curr": 10,
+            },
+        ]
+
     def test_precise_field_filter_does_not_allow_other_fields_on_same_row(self):
         diffs = [
             {

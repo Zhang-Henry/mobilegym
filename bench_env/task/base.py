@@ -152,6 +152,9 @@ class BaseTask(ABC):
         "os.services.taskManager.tasks[].launchedByTaskId",
         # 软键盘为输入焦点带来的瞬态 OS 状态，多数任务不应算作「非预期副作用」
         "os.services.keyboard",
+        # 系统界面/小组件消费的派生镜像状态；canonical 状态仍由对应 App 判定。
+        "os.services.alarm_manager",
+        "os.services.media_session",
         # 联系人查看/操作产生的运行时时间戳
         "os.providers.contacts.contacts[].updatedAt",
         "os.providers.contacts.contacts[].lastContactedAt",
